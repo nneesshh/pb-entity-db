@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\redisservice\src\base\fast_memcpy.h" />
+    <ClInclude Include="..\src\base\CamelConcurrentQueue.h" />
+    <ClInclude Include="..\src\base\concurrent\blockingconcurrentqueue.h" />
+    <ClInclude Include="..\src\base\concurrent\concurrentqueue.h" />
+    <ClInclude Include="..\src\base\IDbService.h" />
+    <ClInclude Include="..\src\base\mysnprintf.h" />
+    <ClInclude Include="..\src\base\platform_types.h" />
+    <ClInclude Include="..\src\base\types.h" />
+    <ClInclude Include="..\src\base\URLCode.h" />
+    <ClInclude Include="..\src\base\utilities.h" />
+    <ClInclude Include="..\src\DbService.h" />
+    <ClInclude Include="..\src\db\IDatabase.h" />
+    <ClInclude Include="..\src\db\IDbStubParam.h" />
+    <ClInclude Include="..\src\db\IProtobufDbStub.h" />
+    <ClInclude Include="..\src\db\Protobuf2DbEngine.h" />
+    <ClInclude Include="..\src\db\ProtobufDbStub.h" />
+    <ClInclude Include="..\src\db\ProtobufImporter.h" />
+    <ClInclude Include="..\src\db\ZdbConnectionPoolSession.h" />
+    <ClInclude Include="..\src\log\StdLog.h" />
+    <ClInclude Include="..\src\log\StdLogLevelDef.h" />
+    <ClInclude Include="..\src\PbStubExecQueue.h" />
+    <ClInclude Include="..\src\PbStubTrunkQueue.h" />
+    <ClInclude Include="..\src\UsingDbService.h" />
+    <ClInclude Include="..\src\UsingProtobuf.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\redisservice\src\base\fast_memcpy.c" />
+    <ClCompile Include="..\src\base\CamelConcurrentQueue.cpp" />
+    <ClCompile Include="..\src\base\mysnprintf.c" />
+    <ClCompile Include="..\src\base\URLCode.cpp" />
+    <ClCompile Include="..\src\base\utilities.c" />
+    <ClCompile Include="..\src\DbService.cpp" />
+    <ClCompile Include="..\src\DbServicePlugin.cpp" />
+    <ClCompile Include="..\src\db\Protobuf2DbEngine.cpp" />
+    <ClCompile Include="..\src\db\ProtobufDbStub.cpp" />
+    <ClCompile Include="..\src\db\ProtobufImporter.cpp" />
+    <ClCompile Include="..\src\db\ZdbConnectionPoolSession.cpp" />
+    <ClCompile Include="..\src\dllmain.cpp" />
+    <ClCompile Include="..\src\PbStubExecQueue.cpp" />
+    <ClCompile Include="..\src\PbStubTrunkQueue.cpp" />
+    <ClCompile Include="..\src\UsingDbService.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8DD76A3F-B773-4AFE-BB61-78C931301DAF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SgServer</RootNamespace>
+    <ProjectName>dbservice</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="..\..\support.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>$(ProjectName)</TargetName>
+    <IncludePath>C:\Program Files (x86)\Windows Kits\8.1\Include\shared;$(IncludePath)</IncludePath>
+    <OutDir>..\..\..\bin_sandbox\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\obj\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Program Files (x86)\Windows Kits\8.1\Include\shared;$(IncludePath)</IncludePath>
+    <OutDir>..\..\..\bin_sandbox\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\obj\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Link>
+      <AdditionalLibraryDirectories>../../libevent/pthreads-w32-2-9-1-release/pthreads.2/lib/$(Configuration);../../mysql/mysql-connector-c-6.1.10-src/build/libmysql/$(Configuration);../../mysql/libzdb-3.1/lib/$(Configuration);../../g/protobuf-3.6.1/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libmysql.lib;libzdb.lib;pthread.lib;libprotobuf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <ShowProgress>NotSet</ShowProgress>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>MSVCRT.lib</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(ProjectDir)..\lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+      <ModuleDefinitionFile>Source.def</ModuleDefinitionFile>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../src;../../libevent/pthreads-w32-2-9-1-release/pthreads.2;../../mysql/mysql-connector-c-6.1.10-src/include;../../mysql/mysql-connector-c-6.1.10-src/build/include;../../mysql/libzdb-3.1/src;../../g/protobuf-3.6.1/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;HAVE_STRUCT_TIMESPEC;_ENABLE_ATOMIC_ALIGNMENT_FIX;MY_DB_BUILDING_SHARED;DBSERVICE_DEBUG_CMD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <OmitFramePointers>false</OmitFramePointers>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../src;../../libevent/pthreads-w32-2-9-1-release/pthreads.2;../../mysql/mysql-connector-c-6.1.10-src/include;../../mysql/mysql-connector-c-6.1.10-src/build/include;../../mysql/libzdb-3.1/src;../../g/protobuf-3.6.1/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;HAVE_STRUCT_TIMESPEC;_ENABLE_ATOMIC_ALIGNMENT_FIX;MY_DB_BUILDING_SHARED;DBSERVICE_DEBUG_CMD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>../../libevent/pthreads-w32-2-9-1-release/pthreads.2/lib/$(Configuration);../../mysql/mysql-connector-c-6.1.10-src/build/libmysql/$(Configuration);../../mysql/libzdb-3.1/lib/$(Configuration);../../g/protobuf-3.6.1/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libmysql.lib;libzdb.lib;pthread.lib;libprotobuf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <ShowProgress>NotSet</ShowProgress>
+      <ImportLibrary>$(ProjectDir)..\lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+      <ModuleDefinitionFile>Source.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

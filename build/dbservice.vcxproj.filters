@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{3248768a-1364-4818-a15b-2c50cca8b574}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base">
+      <UniqueIdentifier>{21a68cdf-a693-4f53-a991-a07488051d0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\concurrent">
+      <UniqueIdentifier>{6755371e-c73f-4cd1-82f8-862ad8cc5c52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\db">
+      <UniqueIdentifier>{48ebb613-4c3d-4c64-976c-fc121c6cf103}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\log">
+      <UniqueIdentifier>{5a7c7a2a-de96-4c82-b3eb-34ff6e1ced7a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\PbStubExecQueue.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\UsingDbService.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DbService.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\PbStubTrunkQueue.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\base\concurrent\concurrentqueue.h">
+      <Filter>src\base\concurrent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\base\concurrent\blockingconcurrentqueue.h">
+      <Filter>src\base\concurrent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\base\IDbService.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\base\platform_types.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\base\CamelConcurrentQueue.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\Protobuf2DbEngine.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\ProtobufDbStub.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\ProtobufImporter.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\ZdbConnectionPoolSession.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\IDatabase.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\IDbStubParam.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\IProtobufDbStub.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\base\URLCode.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\base\utilities.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\base\mysnprintf.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\base\types.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\redisservice\src\base\fast_memcpy.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\UsingProtobuf.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\log\StdLogLevelDef.h">
+      <Filter>src\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\log\StdLog.h">
+      <Filter>src\log</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\UsingDbService.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DbService.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DbServicePlugin.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\dllmain.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PbStubExecQueue.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PbStubTrunkQueue.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\base\CamelConcurrentQueue.cpp">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\db\ProtobufDbStub.cpp">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\db\ProtobufImporter.cpp">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\db\ZdbConnectionPoolSession.cpp">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\db\Protobuf2DbEngine.cpp">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\base\utilities.c">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\base\mysnprintf.c">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\base\URLCode.cpp">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\redisservice\src\base\fast_memcpy.c">
+      <Filter>src\base</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
