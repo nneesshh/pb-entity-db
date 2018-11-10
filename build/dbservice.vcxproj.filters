@@ -16,6 +16,42 @@
     <Filter Include="src\log">
       <UniqueIdentifier>{5a7c7a2a-de96-4c82-b3eb-34ff6e1ced7a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\thirdparty">
+      <UniqueIdentifier>{746e66d9-b92e-4ec1-8c41-b3b1b5461c3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\thirdparty\protobuf">
+      <UniqueIdentifier>{01e1a468-0ec3-4342-b102-524ea91353a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\thirdparty\protobuf\Header Files">
+      <UniqueIdentifier>{30c05f26-5dda-4156-9154-e6ff88f42f33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\thirdparty\protobuf\Source Files">
+      <UniqueIdentifier>{aad5ad6e-760b-46ab-a6b5-d29a2c72a418}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\thirdparty\libzdb">
+      <UniqueIdentifier>{56f9d85e-bd99-444e-b833-b43e6a3431b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\thirdparty\libzdb\src">
+      <UniqueIdentifier>{29f3cf71-65bf-4402-84d1-646d86a3e95c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\thirdparty\libzdb\src\util">
+      <UniqueIdentifier>{5d537730-5f3e-4a28-bd58-9da5b4a6578f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\thirdparty\libzdb\src\net">
+      <UniqueIdentifier>{e8b39992-0cdc-4eb9-a877-1f492fcfbf60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\thirdparty\libzdb\src\exceptions">
+      <UniqueIdentifier>{7dce3b8f-d088-4943-ae8c-dbf54be66e3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\thirdparty\libzdb\src\db">
+      <UniqueIdentifier>{236b0741-10e9-4a7f-b87d-bd6d9cd9eea1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\thirdparty\libzdb\src\db\mysql">
+      <UniqueIdentifier>{1f15c638-97cd-4c8e-8094-e39fbd0b09d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\thirdparty\libzdb\src\system">
+      <UniqueIdentifier>{fc11dda0-ff24-4839-b340-4e020bdfd618}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\PbStubExecQueue.h">
@@ -90,6 +126,246 @@
     <ClInclude Include="..\src\base\fast_memcpy.h">
       <Filter>src\base</Filter>
     </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\any.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\any.pb.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\api.pb.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\compiler\importer.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\compiler\parser.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\descriptor.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\descriptor.pb.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\descriptor_database.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\duration.pb.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\dynamic_message.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\empty.pb.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\field_mask.pb.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\generated_message_reflection.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\io\gzip_stream.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\io\printer.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\io\strtod.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\io\tokenizer.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\io\zero_copy_stream_impl.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\map_field.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\message.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\reflection_ops.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\service.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\source_context.pb.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\struct.pb.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\mathlimits.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\substitute.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\text_format.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\timestamp.pb.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\type.pb.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\unknown_field_set.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\delimited_message_util.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\field_comparator.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\field_mask_util.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\datapiece.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\default_value_objectwriter.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\error_listener.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\field_mask_utility.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\json_escaping.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\json_objectwriter.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\json_stream_parser.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\object_writer.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\protostream_objectsource.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\protostream_objectwriter.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\proto_writer.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\type_info.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\type_info_test_helper.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\utility.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\json_util.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\message_differencer.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\time_util.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\type_resolver_util.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\wire_format.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\wrappers.pb.h">
+      <Filter>src\thirdparty\protobuf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\libzdb\src\Config.h">
+      <Filter>src\thirdparty\libzdb\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\libzdb\src\Macros.h">
+      <Filter>src\thirdparty\libzdb\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\libzdb\src\Thread.h">
+      <Filter>src\thirdparty\libzdb\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\libzdb\src\xconfig.h">
+      <Filter>src\thirdparty\libzdb\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\libzdb\src\zdb.h">
+      <Filter>src\thirdparty\libzdb\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\libzdb\src\util\Str.h">
+      <Filter>src\thirdparty\libzdb\src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\libzdb\src\util\StringBuffer.h">
+      <Filter>src\thirdparty\libzdb\src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\libzdb\src\util\Vector.h">
+      <Filter>src\thirdparty\libzdb\src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\libzdb\src\net\URL.h">
+      <Filter>src\thirdparty\libzdb\src\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\libzdb\src\exceptions\Assertion.h">
+      <Filter>src\thirdparty\libzdb\src\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\libzdb\src\exceptions\AssertException.h">
+      <Filter>src\thirdparty\libzdb\src\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\libzdb\src\exceptions\Exception.h">
+      <Filter>src\thirdparty\libzdb\src\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\libzdb\src\exceptions\MemoryException.h">
+      <Filter>src\thirdparty\libzdb\src\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\libzdb\src\exceptions\SQLException.h">
+      <Filter>src\thirdparty\libzdb\src\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\libzdb\src\db\Connection.h">
+      <Filter>src\thirdparty\libzdb\src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\libzdb\src\db\ConnectionDelegate.h">
+      <Filter>src\thirdparty\libzdb\src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\libzdb\src\db\ConnectionPool.h">
+      <Filter>src\thirdparty\libzdb\src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\libzdb\src\db\PreparedStatement.h">
+      <Filter>src\thirdparty\libzdb\src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\libzdb\src\db\PreparedStatementDelegate.h">
+      <Filter>src\thirdparty\libzdb\src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\libzdb\src\db\ResultSet.h">
+      <Filter>src\thirdparty\libzdb\src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\libzdb\src\db\ResultSetDelegate.h">
+      <Filter>src\thirdparty\libzdb\src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\libzdb\src\db\mysql\MysqlConnection.h">
+      <Filter>src\thirdparty\libzdb\src\db\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\libzdb\src\db\mysql\MysqlPreparedStatement.h">
+      <Filter>src\thirdparty\libzdb\src\db\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\libzdb\src\db\mysql\MysqlResultSet.h">
+      <Filter>src\thirdparty\libzdb\src\db\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\libzdb\src\system\Mem.h">
+      <Filter>src\thirdparty\libzdb\src\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\libzdb\src\system\System.h">
+      <Filter>src\thirdparty\libzdb\src\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thirdparty\libzdb\src\system\Time.h">
+      <Filter>src\thirdparty\libzdb\src\system</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\UsingDbService.cpp">
@@ -136,6 +412,291 @@
     </ClCompile>
     <ClCompile Include="..\src\base\fast_memcpy.c">
       <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\any.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\any.pb.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\api.pb.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\_pb_arena.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\_pb_arenastring.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\compiler\importer.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\compiler\parser.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\descriptor.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\descriptor.pb.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\descriptor_database.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\duration.pb.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\dynamic_message.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\empty.pb.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\extension_set.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\extension_set_heavy.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\field_mask.pb.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\generated_message_reflection.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\generated_message_table_driven.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\generated_message_table_driven_lite.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\generated_message_util.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\implicit_weak_message.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\io\coded_stream.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\io\gzip_stream.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\io\printer.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\io\strtod.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\io\tokenizer.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\io\zero_copy_stream.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\io\zero_copy_stream_impl.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\io\zero_copy_stream_impl_lite.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\map_field.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\message.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\message_lite.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\reflection_ops.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\repeated_field.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\service.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\source_context.pb.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\struct.pb.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\bytestream.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\_pb_common.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\int128.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\io_win32.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\mathlimits.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\status.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\statusor.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\_pb_stringpiece.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\_pb_stringprintf.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\structurally_valid.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\strutil.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\substitute.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\_pb_time.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\text_format.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\timestamp.pb.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\type.pb.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\unknown_field_set.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\delimited_message_util.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\field_comparator.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\field_mask_util.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\datapiece.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\default_value_objectwriter.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\error_listener.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\field_mask_utility.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\json_escaping.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\json_objectwriter.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\json_stream_parser.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\object_writer.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\protostream_objectsource.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\protostream_objectwriter.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\proto_writer.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\type_info.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\type_info_test_helper.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\utility.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\json_util.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\message_differencer.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\_pb_time_util.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\type_resolver_util.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\wire_format.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\wire_format_lite.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\wrappers.pb.cc">
+      <Filter>src\thirdparty\protobuf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\libzdb\src\util\Str.c">
+      <Filter>src\thirdparty\libzdb\src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\libzdb\src\util\StringBuffer.c">
+      <Filter>src\thirdparty\libzdb\src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\libzdb\src\util\Vector.c">
+      <Filter>src\thirdparty\libzdb\src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\libzdb\src\net\URL.c">
+      <Filter>src\thirdparty\libzdb\src\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\libzdb\src\exceptions\Assertion.c">
+      <Filter>src\thirdparty\libzdb\src\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\libzdb\src\exceptions\Exception.c">
+      <Filter>src\thirdparty\libzdb\src\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\libzdb\src\db\Connection.c">
+      <Filter>src\thirdparty\libzdb\src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\libzdb\src\db\ConnectionPool.c">
+      <Filter>src\thirdparty\libzdb\src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\libzdb\src\db\PreparedStatement.c">
+      <Filter>src\thirdparty\libzdb\src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\libzdb\src\db\ResultSet.c">
+      <Filter>src\thirdparty\libzdb\src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\libzdb\src\db\mysql\MysqlConnection.c">
+      <Filter>src\thirdparty\libzdb\src\db\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\libzdb\src\db\mysql\MysqlPreparedStatement.c">
+      <Filter>src\thirdparty\libzdb\src\db\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\libzdb\src\db\mysql\MysqlResultSet.c">
+      <Filter>src\thirdparty\libzdb\src\db\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\libzdb\src\system\gettimeofday.c">
+      <Filter>src\thirdparty\libzdb\src\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\libzdb\src\system\Mem.c">
+      <Filter>src\thirdparty\libzdb\src\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\libzdb\src\system\System.c">
+      <Filter>src\thirdparty\libzdb\src\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thirdparty\libzdb\src\system\Time.c">
+      <Filter>src\thirdparty\libzdb\src\system</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

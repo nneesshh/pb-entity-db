@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -11,6 +11,59 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\any.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\any.pb.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\api.pb.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\compiler\importer.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\compiler\parser.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\descriptor.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\descriptor.pb.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\descriptor_database.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\duration.pb.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\dynamic_message.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\empty.pb.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\field_mask.pb.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\generated_message_reflection.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\io\gzip_stream.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\io\printer.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\io\strtod.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\io\tokenizer.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\io\zero_copy_stream_impl.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\map_field.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\message.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\reflection_ops.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\service.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\source_context.pb.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\struct.pb.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\mathlimits.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\substitute.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\text_format.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\timestamp.pb.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\type.pb.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\unknown_field_set.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\delimited_message_util.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\field_comparator.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\field_mask_util.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\datapiece.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\default_value_objectwriter.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\error_listener.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\field_mask_utility.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\json_escaping.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\json_objectwriter.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\json_stream_parser.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\object_writer.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\protostream_objectsource.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\protostream_objectwriter.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\proto_writer.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\type_info.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\type_info_test_helper.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\utility.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\json_util.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\message_differencer.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\time_util.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\util\type_resolver_util.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\wire_format.h" />
+    <ClInclude Include="..\src\thirdparty\protobuf\src\google\protobuf\wrappers.pb.h" />
     <ClInclude Include="..\src\base\CamelConcurrentQueue.h" />
     <ClInclude Include="..\src\base\concurrent\blockingconcurrentqueue.h" />
     <ClInclude Include="..\src\base\concurrent\concurrentqueue.h" />
@@ -35,8 +88,113 @@
     <ClInclude Include="..\src\PbStubTrunkQueue.h" />
     <ClInclude Include="..\src\UsingDbService.h" />
     <ClInclude Include="..\src\UsingProtobuf.h" />
+    <ClInclude Include="..\src\thirdparty\libzdb\src\Config.h" />
+    <ClInclude Include="..\src\thirdparty\libzdb\src\db\Connection.h" />
+    <ClInclude Include="..\src\thirdparty\libzdb\src\db\ConnectionDelegate.h" />
+    <ClInclude Include="..\src\thirdparty\libzdb\src\db\ConnectionPool.h" />
+    <ClInclude Include="..\src\thirdparty\libzdb\src\db\mysql\MysqlConnection.h" />
+    <ClInclude Include="..\src\thirdparty\libzdb\src\db\mysql\MysqlPreparedStatement.h" />
+    <ClInclude Include="..\src\thirdparty\libzdb\src\db\mysql\MysqlResultSet.h" />
+    <ClInclude Include="..\src\thirdparty\libzdb\src\db\PreparedStatement.h" />
+    <ClInclude Include="..\src\thirdparty\libzdb\src\db\PreparedStatementDelegate.h" />
+    <ClInclude Include="..\src\thirdparty\libzdb\src\db\ResultSet.h" />
+    <ClInclude Include="..\src\thirdparty\libzdb\src\db\ResultSetDelegate.h" />
+    <ClInclude Include="..\src\thirdparty\libzdb\src\exceptions\AssertException.h" />
+    <ClInclude Include="..\src\thirdparty\libzdb\src\exceptions\Assertion.h" />
+    <ClInclude Include="..\src\thirdparty\libzdb\src\exceptions\Exception.h" />
+    <ClInclude Include="..\src\thirdparty\libzdb\src\exceptions\MemoryException.h" />
+    <ClInclude Include="..\src\thirdparty\libzdb\src\exceptions\SQLException.h" />
+    <ClInclude Include="..\src\thirdparty\libzdb\src\Macros.h" />
+    <ClInclude Include="..\src\thirdparty\libzdb\src\net\URL.h" />
+    <ClInclude Include="..\src\thirdparty\libzdb\src\system\Mem.h" />
+    <ClInclude Include="..\src\thirdparty\libzdb\src\system\System.h" />
+    <ClInclude Include="..\src\thirdparty\libzdb\src\system\Time.h" />
+    <ClInclude Include="..\src\thirdparty\libzdb\src\Thread.h" />
+    <ClInclude Include="..\src\thirdparty\libzdb\src\util\Str.h" />
+    <ClInclude Include="..\src\thirdparty\libzdb\src\util\StringBuffer.h" />
+    <ClInclude Include="..\src\thirdparty\libzdb\src\util\Vector.h" />
+    <ClInclude Include="..\src\thirdparty\libzdb\src\xconfig.h" />
+    <ClInclude Include="..\src\thirdparty\libzdb\src\zdb.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\any.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\any.pb.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\api.pb.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\compiler\importer.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\compiler\parser.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\descriptor.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\descriptor.pb.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\descriptor_database.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\duration.pb.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\dynamic_message.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\empty.pb.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\extension_set.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\extension_set_heavy.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\field_mask.pb.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\generated_message_reflection.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\generated_message_table_driven.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\generated_message_table_driven_lite.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\generated_message_util.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\implicit_weak_message.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\io\coded_stream.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\io\gzip_stream.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\io\printer.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\io\strtod.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\io\tokenizer.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\io\zero_copy_stream.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\io\zero_copy_stream_impl.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\io\zero_copy_stream_impl_lite.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\map_field.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\message.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\message_lite.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\reflection_ops.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\repeated_field.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\service.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\source_context.pb.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\struct.pb.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\bytestream.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\int128.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\io_win32.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\mathlimits.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\status.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\statusor.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\structurally_valid.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\strutil.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\substitute.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\_pb_common.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\_pb_stringpiece.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\_pb_stringprintf.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\stubs\_pb_time.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\text_format.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\timestamp.pb.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\type.pb.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\unknown_field_set.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\delimited_message_util.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\field_comparator.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\field_mask_util.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\datapiece.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\default_value_objectwriter.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\error_listener.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\field_mask_utility.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\json_escaping.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\json_objectwriter.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\json_stream_parser.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\object_writer.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\protostream_objectsource.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\protostream_objectwriter.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\proto_writer.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\type_info.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\type_info_test_helper.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\internal\utility.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\json_util.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\message_differencer.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\type_resolver_util.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\util\_pb_time_util.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\wire_format.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\wire_format_lite.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\wrappers.pb.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\_pb_arena.cc" />
+    <ClCompile Include="..\src\thirdparty\protobuf\src\google\protobuf\_pb_arenastring.cc" />
     <ClCompile Include="..\src\base\CamelConcurrentQueue.cpp" />
     <ClCompile Include="..\src\base\fast_memcpy.c" />
     <ClCompile Include="..\src\base\mysnprintf.c" />
@@ -52,22 +210,39 @@
     <ClCompile Include="..\src\PbStubExecQueue.cpp" />
     <ClCompile Include="..\src\PbStubTrunkQueue.cpp" />
     <ClCompile Include="..\src\UsingDbService.cpp" />
+    <ClCompile Include="..\src\thirdparty\libzdb\src\db\Connection.c" />
+    <ClCompile Include="..\src\thirdparty\libzdb\src\db\ConnectionPool.c" />
+    <ClCompile Include="..\src\thirdparty\libzdb\src\db\mysql\MysqlConnection.c" />
+    <ClCompile Include="..\src\thirdparty\libzdb\src\db\mysql\MysqlPreparedStatement.c" />
+    <ClCompile Include="..\src\thirdparty\libzdb\src\db\mysql\MysqlResultSet.c" />
+    <ClCompile Include="..\src\thirdparty\libzdb\src\db\PreparedStatement.c" />
+    <ClCompile Include="..\src\thirdparty\libzdb\src\db\ResultSet.c" />
+    <ClCompile Include="..\src\thirdparty\libzdb\src\exceptions\Assertion.c" />
+    <ClCompile Include="..\src\thirdparty\libzdb\src\exceptions\Exception.c" />
+    <ClCompile Include="..\src\thirdparty\libzdb\src\net\URL.c" />
+    <ClCompile Include="..\src\thirdparty\libzdb\src\system\gettimeofday.c" />
+    <ClCompile Include="..\src\thirdparty\libzdb\src\system\Mem.c" />
+    <ClCompile Include="..\src\thirdparty\libzdb\src\system\System.c" />
+    <ClCompile Include="..\src\thirdparty\libzdb\src\system\Time.c" />
+    <ClCompile Include="..\src\thirdparty\libzdb\src\util\Str.c" />
+    <ClCompile Include="..\src\thirdparty\libzdb\src\util\StringBuffer.c" />
+    <ClCompile Include="..\src\thirdparty\libzdb\src\util\Vector.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{8DD76A3F-B773-4AFE-BB61-78C931301DAF}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>SgServer</RootNamespace>
     <ProjectName>dbservice</ProjectName>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
     <WholeProgramOptimization>false</WholeProgramOptimization>
@@ -81,18 +256,18 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <TargetName>$(ProjectName)</TargetName>
     <IncludePath>C:\Program Files (x86)\Windows Kits\8.1\Include\shared;$(IncludePath)</IncludePath>
-    <OutDir>..\bin\$(Configuration)\</OutDir>
+    <OutDir>..\..\..\bin_sandbox\$(Configuration)\</OutDir>
     <IntDir>$(ProjectName).dir\obj\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>C:\Program Files (x86)\Windows Kits\8.1\Include\shared;$(IncludePath)</IncludePath>
-    <OutDir>..\bin\$(Configuration)\</OutDir>
+    <OutDir>..\..\..\bin_sandbox\$(Configuration)\</OutDir>
     <IntDir>$(ProjectName).dir\obj\$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Link>
-      <AdditionalLibraryDirectories>../thirdparty/mysql-connector-c-6.1.10-src/build/libmysql/$(Configuration);../thirdparty/libzdb-3.1/lib/$(Configuration);../thirdparty/pthreads-w32-2-9-1-release/pthreads.2/lib/$(Configuration);../thirdparty/protobuf-3.6.1/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libmysql.lib;libzdb.lib;pthread.lib;libprotobuf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../thirdparty/mysql-connector-c-6.1.10-src/build/libmysql/$(Configuration);../thirdparty/pthreads-w32-2-9-1-release/pthreads.2/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libmysql.lib;pthread.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
       <ShowProgress>NotSet</ShowProgress>
       <IgnoreAllDefaultLibraries>
@@ -102,7 +277,7 @@
       <ModuleDefinitionFile>Source.def</ModuleDefinitionFile>
     </Link>
     <ClCompile>
-      <AdditionalIncludeDirectories>../src;../thirdparty/mysql-connector-c-6.1.10-src/include;../thirdparty/mysql-connector-c-6.1.10-src/build/include;../thirdparty/libzdb-3.1/src;../thirdparty/pthreads-w32-2-9-1-release/pthreads.2;../thirdparty/protobuf-3.6.1/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../src;../src/thirdparty/protobuf/src;../src/thirdparty/libzdb/src;../thirdparty/mysql-connector-c-6.1.10-src/include;../thirdparty/mysql-connector-c-6.1.10-src/build/include;../thirdparty/pthreads-w32-2-9-1-release/pthreads.2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;HAVE_STRUCT_TIMESPEC;_ENABLE_ATOMIC_ALIGNMENT_FIX;MY_DB_BUILDING_SHARED;DBSERVICE_DEBUG_CMD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <Optimization>Disabled</Optimization>
@@ -116,14 +291,14 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../src;../thirdparty/mysql-connector-c-6.1.10-src/include;../thirdparty/mysql-connector-c-6.1.10-src/build/include;../thirdparty/libzdb-3.1/src;../thirdparty/pthreads-w32-2-9-1-release/pthreads.2;../thirdparty/protobuf-3.6.1/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../src;../src/thirdparty/protobuf/src;../src/thirdparty/libzdb/src;../thirdparty/mysql-connector-c-6.1.10-src/include;../thirdparty/mysql-connector-c-6.1.10-src/build/include;../thirdparty/pthreads-w32-2-9-1-release/pthreads.2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;HAVE_STRUCT_TIMESPEC;_ENABLE_ATOMIC_ALIGNMENT_FIX;MY_DB_BUILDING_SHARED;DBSERVICE_DEBUG_CMD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <Optimization>Full</Optimization>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>../thirdparty/mysql-connector-c-6.1.10-src/build/libmysql/$(Configuration);../thirdparty/libzdb-3.1/lib/$(Configuration);../thirdparty/pthreads-w32-2-9-1-release/pthreads.2/lib/$(Configuration);../thirdparty/protobuf-3.6.1/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libmysql.lib;libzdb.lib;pthread.lib;libprotobuf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../thirdparty/mysql-connector-c-6.1.10-src/build/libmysql/$(Configuration);../thirdparty/pthreads-w32-2-9-1-release/pthreads.2/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libmysql.lib;pthread.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
       <ShowProgress>NotSet</ShowProgress>
       <ImportLibrary>$(ProjectDir)..\lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
