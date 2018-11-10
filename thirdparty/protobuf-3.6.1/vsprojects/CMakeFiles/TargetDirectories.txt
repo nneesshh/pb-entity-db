@@ -1,0 +1,14 @@
+D:/dd/protobuf-cpp-3.6.1/protobuf-3.6.1/vsprojects/CMakeFiles/libprotobuf-lite.dir
+D:/dd/protobuf-cpp-3.6.1/protobuf-3.6.1/vsprojects/CMakeFiles/test_plugin.dir
+D:/dd/protobuf-cpp-3.6.1/protobuf-3.6.1/vsprojects/CMakeFiles/libprotobuf.dir
+D:/dd/protobuf-cpp-3.6.1/protobuf-3.6.1/vsprojects/CMakeFiles/protoc.dir
+D:/dd/protobuf-cpp-3.6.1/protobuf-3.6.1/vsprojects/CMakeFiles/libprotoc.dir
+D:/dd/protobuf-cpp-3.6.1/protobuf-3.6.1/vsprojects/CMakeFiles/gmock.dir
+D:/dd/protobuf-cpp-3.6.1/protobuf-3.6.1/vsprojects/CMakeFiles/gmock_main.dir
+D:/dd/protobuf-cpp-3.6.1/protobuf-3.6.1/vsprojects/CMakeFiles/tests.dir
+D:/dd/protobuf-cpp-3.6.1/protobuf-3.6.1/vsprojects/CMakeFiles/lite-test.dir
+D:/dd/protobuf-cpp-3.6.1/protobuf-3.6.1/vsprojects/CMakeFiles/lite-arena-test.dir
+D:/dd/protobuf-cpp-3.6.1/protobuf-3.6.1/vsprojects/CMakeFiles/check.dir
+D:/dd/protobuf-cpp-3.6.1/protobuf-3.6.1/vsprojects/CMakeFiles/INSTALL.dir
+D:/dd/protobuf-cpp-3.6.1/protobuf-3.6.1/vsprojects/CMakeFiles/ALL_BUILD.dir
+D:/dd/protobuf-cpp-3.6.1/protobuf-3.6.1/vsprojects/CMakeFiles/ZERO_CHECK.dir

@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{1F0B1EF4-7907-38EC-B077-9AB29EB9A444}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>strings</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\strings\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">strings.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">strings</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\strings\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">strings.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">strings</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\extra\rapidjson\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;ENABLED_DEBUG_SYNC;SAFE_MUTEX;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;DISABLE_MYSQL_THREAD_H;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ENABLED_DEBUG_SYNC;SAFE_MUTEX;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;DISABLE_MYSQL_THREAD_H;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\extra\rapidjson\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\extra\rapidjson\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\extra\rapidjson\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;DISABLE_MYSQL_THREAD_H;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;DISABLE_MYSQL_THREAD_H;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\extra\rapidjson\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\extra\rapidjson\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\bchange.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\ctype-big5.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\ctype-bin.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\ctype-cp932.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\ctype-czech.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\ctype-euc_kr.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\ctype-eucjpms.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\ctype-extra.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\ctype-gb2312.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\ctype-gbk.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\ctype-gb18030.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\ctype-latin1.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\ctype-mb.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\ctype-simple.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\ctype-sjis.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\ctype-tis620.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\ctype-uca.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\ctype-ucs2.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\ctype-ujis.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\ctype-utf8.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\ctype-win1250ch.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\ctype.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\decimal.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\dtoa.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\int2str.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\is_prefix.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\llstr.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\longlong2str.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\my_strtoll10.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\my_vsnprintf.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\str2int.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\str_alloc.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\strcend.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\strend.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\strfill.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\strmake.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\my_stpmov.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\my_stpnmov.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\strxmov.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\strxnmov.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\xml.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\my_strchr.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\strcont.c" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\strings\strappend.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

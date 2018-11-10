@@ -1,0 +1,111 @@
+# CMake generation dependency list for this directory.
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/CMakeLists.txt
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/build/CMakeFiles/3.8.0/CMakeSystem.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeSystemSpecificInitialize.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/build/CMakeFiles/3.8.0/CMakeCCompiler.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/build/CMakeFiles/3.8.0/CMakeCXXCompiler.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/Platform/Windows-MSVC.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/build/CMakeFiles/3.8.0/CMakeRCCompiler.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeCommonLanguageInclude.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/cmake/os/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckStructHasMember.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckCCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckCSourceRuns.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckIncludeFileCXX.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/cmake/os/WindowsCache.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckIncludeFileCXX.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/cmake/build_configurations/compiler_options.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckCCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/cmake/floating_point.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckCSourceRuns.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckCXXSourceRuns.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/cmake/build_configurations/feature_set.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/cmake/character_sets.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/cmake/cpu_info.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/cmake/zlib.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/cmake/ssl.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/cmake/mysql_version.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/VERSION
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/cmake/package_name.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/cmake/cpack_source_ignore_files.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/cmake/versioninfo.rc.in
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/cmake/versioninfo.rc.in
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/cmake/libutils.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/cmake/cmake_parse_arguments.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/cmake/dtrace.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/cmake/install_macros.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/cmake/cmake_parse_arguments.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/cmake/install_layout.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/cmake/mysql_add_executable.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/cmake/cmake_parse_arguments.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckCXXSourceCompiles.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/configure.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckStructHasMember.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckCCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckCSourceRuns.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckCXXSourceRuns.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/FindThreads.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckIncludeFiles.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/TestBigEndian.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CheckIncludeFileCXX.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/cmake/maintainer.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/cmake/abi_check.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/cmake/tags.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/config.h.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/config.h.cmake
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/include/mysql_version.h.in
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/cmake/info_macros.cmake.in
+D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/build/info_macros.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CPack.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CPackComponent.cmake
+C:/Program Files/CMake/share/cmake-3.8/Templates/CPackConfig.cmake.in
+C:/Program Files/CMake/share/cmake-3.8/Templates/CPackConfig.cmake.in

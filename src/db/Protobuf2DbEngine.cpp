@@ -18,6 +18,67 @@
 
 std::shared_timed_mutex Protobuf2DbEngine::s_mutex;
 
+typedef enum enum_field_types {
+	MYSQL_TYPE_DECIMAL, MYSQL_TYPE_TINY,
+	MYSQL_TYPE_SHORT, MYSQL_TYPE_LONG,
+	MYSQL_TYPE_FLOAT, MYSQL_TYPE_DOUBLE,
+	MYSQL_TYPE_NULL, MYSQL_TYPE_TIMESTAMP,
+	MYSQL_TYPE_LONGLONG, MYSQL_TYPE_INT24,
+	MYSQL_TYPE_DATE, MYSQL_TYPE_TIME,
+	MYSQL_TYPE_DATETIME, MYSQL_TYPE_YEAR,
+	MYSQL_TYPE_NEWDATE, MYSQL_TYPE_VARCHAR,
+	MYSQL_TYPE_BIT,
+	MYSQL_TYPE_TIMESTAMP2,
+	MYSQL_TYPE_DATETIME2,
+	MYSQL_TYPE_TIME2,
+	MYSQL_TYPE_JSON = 245,
+	MYSQL_TYPE_NEWDECIMAL = 246,
+	MYSQL_TYPE_ENUM = 247,
+	MYSQL_TYPE_SET = 248,
+	MYSQL_TYPE_TINY_BLOB = 249,
+	MYSQL_TYPE_MEDIUM_BLOB = 250,
+	MYSQL_TYPE_LONG_BLOB = 251,
+	MYSQL_TYPE_BLOB = 252,
+	MYSQL_TYPE_VAR_STRING = 253,
+	MYSQL_TYPE_STRING = 254,
+	MYSQL_TYPE_GEOMETRY = 255
+} enum_field_types;
+
+static std::map<int, std::string> s_map_field_type = {
+	{ 0,						"MYSQL_TYPE_UNKNOWN" },
+	{ MYSQL_TYPE_DECIMAL,		"MYSQL_TYPE_DECIMAL" },
+	{ MYSQL_TYPE_TINY,			"MYSQL_TYPE_TINY" },
+	{ MYSQL_TYPE_SHORT,			"MYSQL_TYPE_SHORT" },
+	{ MYSQL_TYPE_LONG,			"MYSQL_TYPE_LONG" },
+	{ MYSQL_TYPE_FLOAT,			"MYSQL_TYPE_FLOAT" },
+	{ MYSQL_TYPE_DOUBLE,		"MYSQL_TYPE_DOUBLE" },
+	{ MYSQL_TYPE_NULL,			"MYSQL_TYPE_NULL" },
+	{ MYSQL_TYPE_TIMESTAMP,		"MYSQL_TYPE_TIMESTAMP" },
+	{ MYSQL_TYPE_LONGLONG,		"MYSQL_TYPE_LONGLONG" },
+	{ MYSQL_TYPE_INT24,			"MYSQL_TYPE_INT24" },
+	{ MYSQL_TYPE_DATE,			"MYSQL_TYPE_DATE" },
+	{ MYSQL_TYPE_TIME,			"MYSQL_TYPE_TIME" },
+	{ MYSQL_TYPE_DATETIME,		"MYSQL_TYPE_DATETIME" },
+	{ MYSQL_TYPE_YEAR,			"MYSQL_TYPE_YEAR" },
+	{ MYSQL_TYPE_NEWDATE,		"MYSQL_TYPE_NEWDATE" },
+	{ MYSQL_TYPE_VARCHAR,		"MYSQL_TYPE_VARCHAR" },
+	{ MYSQL_TYPE_BIT,			"MYSQL_TYPE_BIT" },
+	{ MYSQL_TYPE_TIMESTAMP2,	"MYSQL_TYPE_TIMESTAMP2" },
+	{ MYSQL_TYPE_DATETIME2,		"MYSQL_TYPE_DATETIME2" },
+	{ MYSQL_TYPE_TIME2,			"MYSQL_TYPE_TIME2" },
+	{ MYSQL_TYPE_JSON,			"MYSQL_TYPE_JSON" },
+	{ MYSQL_TYPE_NEWDECIMAL,	"MYSQL_TYPE_NEWDECIMAL" },
+	{ MYSQL_TYPE_ENUM,			"MYSQL_TYPE_ENUM" },
+	{ MYSQL_TYPE_SET,			"MYSQL_TYPE_SET" },
+	{ MYSQL_TYPE_TINY_BLOB,		"MYSQL_TYPE_TINY_BLOB" },
+	{ MYSQL_TYPE_MEDIUM_BLOB,	"MYSQL_TYPE_MEDIUM_BLOB" },
+	{ MYSQL_TYPE_LONG_BLOB,		"MYSQL_TYPE_LONG_BLOB" },
+	{ MYSQL_TYPE_BLOB,			"MYSQL_TYPE_BLOB" },
+	{ MYSQL_TYPE_VAR_STRING,	"MYSQL_TYPE_VAR_STRING" },
+	{ MYSQL_TYPE_STRING,		"MYSQL_TYPE_STRING" },
+	{ MYSQL_TYPE_GEOMETRY,		"MYSQL_TYPE_GEOMETRY" },
+};
+
 //------------------------------------------------------------------------------
 /**
 
@@ -53,7 +114,7 @@ Protobuf2DbEngine::OnInit(StdLog *pLog, const char * sURL, const char *sUser, co
 */
 void
 Protobuf2DbEngine::OnDelete() {
-	
+
 }
 
 //------------------------------------------------------------------------------
@@ -100,7 +161,7 @@ Protobuf2DbEngine::ESelect(google::protobuf::Message& entity, std::vector<std::s
 	// no need to clear return recordset, because it will be always success from here
 	if (rs.IsOpened()) {
 		vResult.reserve(256);
-		
+
 		ParseEntityResult(rs, vResult, entity);
 	}
 
@@ -182,7 +243,7 @@ Protobuf2DbEngine::SpQuery(google::protobuf::Message& storedProc) {
 	ZdbResultSet rs(_db, &s);
 	if (!s.Exec(&rs))
 		return false;
-	
+
 	// return recordset
 	// no need to clear return recordset, because it will be always success from here
 	if (1) {
@@ -386,7 +447,7 @@ Protobuf2DbEngine::ParseSelect(const google::protobuf::Message& entity, const st
 	for (i = 0; i < nFieldCount; ++i) {
 		const google::protobuf::FieldDescriptor *field = descriptor->field(i);
 		const std::string& sName = field->name();
-		
+
 		bool bSkip = (field->is_repeated() || !reflection->HasField(entity, field));
 		if (bSkip)
 			continue;
@@ -615,9 +676,9 @@ bool
 Protobuf2DbEngine::ParseProc(const google::protobuf::Message *pStoredProc, const std::string& sProcName, IDBStatement *pOutS) {
 	const google::protobuf::Descriptor	*descriptor = pStoredProc->GetDescriptor();
 	const google::protobuf::Reflection	*reflection = pStoredProc->GetReflection();
-	
+
 	int nFieldCount, i;
-	
+
 	// parse
 	nFieldCount = descriptor->field_count();
 
@@ -643,10 +704,10 @@ Protobuf2DbEngine::ParseProc(const google::protobuf::Message *pStoredProc, const
 			//
 			ParseProcParams(pOutS, &param);
 		}
-// 		else if (field_name == "opt") {
-// 			const google::protobuf::Message& options = reflection->GetMessage(*pStoredProc, field);
-// 			ParseProcOptions(&options);
-// 		}
+		// 		else if (field_name == "opt") {
+		// 			const google::protobuf::Message& options = reflection->GetMessage(*pStoredProc, field);
+		// 			ParseProcOptions(&options);
+		// 		}
 
 	}
 	return true;
@@ -674,10 +735,10 @@ Protobuf2DbEngine::ParseProcOptions(const google::protobuf::Message *pParam) {
 			field->label() == google::protobuf::FieldDescriptor::LABEL_REQUIRED);
 
 		// parse bytes_is_blob, deprecated
-//		const std::string &name = field->name();
-// 		if (name == "bytes_is_blob") {
-// 			*pOutBytesIsBlob = reflection->GetBool(*pParam, field);
-// 		}
+		//		const std::string &name = field->name();
+		// 		if (name == "bytes_is_blob") {
+		// 			*pOutBytesIsBlob = reflection->GetBool(*pParam, field);
+		// 		}
 	}
 }
 
@@ -881,6 +942,7 @@ Protobuf2DbEngine::AddFirstReturnRecord(IDBResultSet *pRs, google::protobuf::Mes
 	std::string							strtypename = one_record->GetTypeName();
 
 	int nFieldIndex = 0;
+	int nFieldType = 0;
 	int nFieldCount = descriptor->field_count();
 	int i;
 	for (i = 0; i < nFieldCount; ++i) {
@@ -902,7 +964,18 @@ Protobuf2DbEngine::AddFirstReturnRecord(IDBResultSet *pRs, google::protobuf::Mes
 		case google::protobuf::FieldDescriptor::TYPE_SFIXED64: {
 			// we use TYPE_SFIXED64 as time_t
 			time_t tmVal = INT64_MIN;
-			pRs->GetFieldValue((char *)name.c_str(), &tmVal, &nFieldIndex);
+			pRs->GetFieldValue((char *)name.c_str(), &tmVal, &nFieldIndex, &nFieldType);
+#ifdef _DEBUG
+			if (MYSQL_TYPE_DATETIME != nFieldType
+				&& MYSQL_TYPE_DATE != nFieldType) {
+				fprintf(stderr, "\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+				fprintf(stderr, "\n!!! !!! FAILED -- proto(%s)->name(%s)type(TYPE_SFIXED64) mismatched with resultset fieldtype(%d)(%s)",
+					strtypename.c_str(), name.c_str(), nFieldType, s_map_field_type[nFieldType].c_str());
+				fprintf(stderr, "\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\n\n\n\t!!!DbService will abort!!!\n\n\n\n");
+				system("pause");
+				exit(-1);
+			}
+#endif
 			reflection->SetInt64(one_record, field, (int64_t)tmVal);
 			break;
 		}
@@ -910,14 +983,34 @@ Protobuf2DbEngine::AddFirstReturnRecord(IDBResultSet *pRs, google::protobuf::Mes
 		case google::protobuf::FieldDescriptor::TYPE_FIXED64:
 		case google::protobuf::FieldDescriptor::TYPE_INT64: {
 			int64_t nVal = INT64_MIN;
-			pRs->GetFieldInt64Value((char *)name.c_str(), &nVal, &nFieldIndex);
+			pRs->GetFieldInt64Value((char *)name.c_str(), &nVal, &nFieldIndex, &nFieldType);
+#ifdef _DEBUG
+			if (MYSQL_TYPE_LONGLONG != nFieldType) {
+				fprintf(stderr, "\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+				fprintf(stderr, "\n!!! !!! FAILED -- proto(%s)->name(%s)type(TYPE_FIXED64, TYPE_INT64) mismatched with resultset fieldtype(%d)(%s)",
+					strtypename.c_str(), name.c_str(), nFieldType, s_map_field_type[nFieldType].c_str());
+				fprintf(stderr, "\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\n\n\n\t!!!DbService will abort!!!\n\n\n\n");
+				system("pause");
+				exit(-1);
+			}
+#endif
 			reflection->SetInt64(one_record, field, nVal);
 			break;
 		}
 
 		case google::protobuf::FieldDescriptor::TYPE_UINT64: {
 			int64_t nVal = INT64_MIN;
-			pRs->GetFieldInt64Value((char *)name.c_str(), &nVal, &nFieldIndex);
+			pRs->GetFieldInt64Value((char *)name.c_str(), &nVal, &nFieldIndex, &nFieldType);
+#ifdef _DEBUG
+			if (MYSQL_TYPE_LONGLONG != nFieldType) {
+				fprintf(stderr, "\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+				fprintf(stderr, "\n!!! !!! FAILED -- proto(%s)->name(%s)type(TYPE_UINT64) mismatched with resultset fieldtype(%d)(%s)",
+					strtypename.c_str(), name.c_str(), nFieldType, s_map_field_type[nFieldType].c_str());
+				fprintf(stderr, "\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\n\n\n\t!!!DbService will abort!!!\n\n\n\n");
+				system("pause");
+				exit(-1);
+			}
+#endif
 			reflection->SetUInt64(one_record, field, (uint64_t)nVal);
 			break;
 		}
@@ -925,21 +1018,56 @@ Protobuf2DbEngine::AddFirstReturnRecord(IDBResultSet *pRs, google::protobuf::Mes
 		case google::protobuf::FieldDescriptor::TYPE_FIXED32:
 		case google::protobuf::FieldDescriptor::TYPE_INT32: {
 			int32_t nVal = INT32_MIN;
-			pRs->GetFieldValue((char *)name.c_str(), &nVal, &nFieldIndex);
+			pRs->GetFieldValue((char *)name.c_str(), &nVal, &nFieldIndex, &nFieldType);
+#ifdef _DEBUG
+			if (MYSQL_TYPE_LONG != nFieldType
+				&& MYSQL_TYPE_SHORT != nFieldType
+				&& MYSQL_TYPE_TINY != nFieldType) {
+				fprintf(stderr, "\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+				fprintf(stderr, "\n!!! !!! FAILED -- proto(%s)->name(%s)type(TYPE_FIXED32, TYPE_INT32) mismatched with resultset fieldtype(%d)(%s)",
+					strtypename.c_str(), name.c_str(), nFieldType, s_map_field_type[nFieldType].c_str());
+				fprintf(stderr, "\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\n\n\n\t!!!DbService will abort!!!\n\n\n\n");
+				system("pause");
+				exit(-1);
+			}
+#endif
 			reflection->SetInt32(one_record, field, nVal);
 			break;
 		}
 
 		case google::protobuf::FieldDescriptor::TYPE_UINT32: {
 			int32_t nVal = INT32_MIN;
-			pRs->GetFieldValue((char *)name.c_str(), &nVal, &nFieldIndex);
+			pRs->GetFieldValue((char *)name.c_str(), &nVal, &nFieldIndex, &nFieldType);
+#ifdef _DEBUG
+			if (MYSQL_TYPE_LONG != nFieldType
+				&& MYSQL_TYPE_SHORT != nFieldType
+				&& MYSQL_TYPE_TINY != nFieldType) {
+				fprintf(stderr, "\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+				fprintf(stderr, "\n!!! !!! FAILED -- proto(%s)->name(%s)type(TYPE_UINT32) mismatched with resultset fieldtype(%d)(%s)",
+					strtypename.c_str(), name.c_str(), nFieldType, s_map_field_type[nFieldType].c_str());
+				fprintf(stderr, "\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\n\n\n\t!!!DbService will abort!!!\n\n\n\n");
+				system("pause");
+				exit(-1);
+			}
+#endif
 			reflection->SetUInt32(one_record, field, (uint32_t)nVal);
 			break;
 		}
 
 		case google::protobuf::FieldDescriptor::TYPE_STRING: {
 			const char *scratch = nullptr;
-			pRs->GetFieldValue((char *)name.c_str(), &scratch, &nFieldIndex);
+			pRs->GetFieldValue((char *)name.c_str(), &scratch, &nFieldIndex, &nFieldType);
+#ifdef _DEBUG
+			if (MYSQL_TYPE_VARCHAR != nFieldType
+				&& MYSQL_TYPE_STRING != nFieldType) {
+				fprintf(stderr, "\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+				fprintf(stderr, "\n!!! !!! FAILED -- proto(%s)->name(%s)type(TYPE_STRING) mismatched with resultset fieldtype(%d)(%s)",
+					strtypename.c_str(), name.c_str(), nFieldType, s_map_field_type[nFieldType].c_str());
+				fprintf(stderr, "\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\n\n\n\t!!!DbService will abort!!!\n\n\n\n");
+				system("pause");
+				exit(-1);
+			}
+#endif
 			if (scratch) {
 				reflection->SetString(one_record, field, scratch);
 			}
@@ -952,7 +1080,18 @@ Protobuf2DbEngine::AddFirstReturnRecord(IDBResultSet *pRs, google::protobuf::Mes
 		case google::protobuf::FieldDescriptor::TYPE_BYTES: {
 			unsigned char *blob = nullptr;
 			unsigned long blobSize;
-			pRs->GetFieldValue((char *)name.c_str(), &blob, &blobSize, &nFieldIndex);
+			pRs->GetFieldValue((char *)name.c_str(), &blob, &blobSize, &nFieldIndex, &nFieldType);
+#ifdef _DEBUG
+			if (MYSQL_TYPE_BLOB != nFieldType
+				&& MYSQL_TYPE_VAR_STRING != nFieldType) {
+				fprintf(stderr, "\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+				fprintf(stderr, "\n!!! !!! FAILED -- proto(%s)->name(%s)type(TYPE_BYTES) mismatched with resultset fieldtype(%d)(%s)",
+					strtypename.c_str(), name.c_str(), nFieldType, s_map_field_type[nFieldType].c_str());
+				fprintf(stderr, "\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\n\n\n\t!!!DbService will abort!!!\n\n\n\n");
+				system("pause");
+				exit(-1);
+			}
+#endif
 			if (blob) {
 				std::string scratch((char *)blob, blobSize);
 				reflection->SetString(one_record, field, scratch);
@@ -965,21 +1104,53 @@ Protobuf2DbEngine::AddFirstReturnRecord(IDBResultSet *pRs, google::protobuf::Mes
 
 		case google::protobuf::FieldDescriptor::TYPE_DOUBLE: {
 			double dVal = DBL_MIN;
-			pRs->GetFieldDoubleValue((char *)name.c_str(), &dVal, &nFieldIndex);
+			pRs->GetFieldDoubleValue((char *)name.c_str(), &dVal, &nFieldIndex, &nFieldType);
+#ifdef _DEBUG
+			if (MYSQL_TYPE_DOUBLE != nFieldType) {
+				fprintf(stderr, "\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+				fprintf(stderr, "\n!!! !!! FAILED -- proto(%s)->name(%s)type(TYPE_DOUBLE) mismatched with resultset fieldtype(%d)(%s)",
+					strtypename.c_str(), name.c_str(), nFieldType, s_map_field_type[nFieldType].c_str());
+				fprintf(stderr, "\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\n\n\n\t!!!DbService will abort!!!\n\n\n\n");
+				system("pause");
+				exit(-1);
+			}
+#endif
 			reflection->SetDouble(one_record, field, dVal);
 			break;
 		}
 
 		case google::protobuf::FieldDescriptor::TYPE_FLOAT: {
 			float fVal = FLT_MIN;
-			pRs->GetFieldFloatValue((char *)name.c_str(), &fVal, &nFieldIndex);
+			pRs->GetFieldFloatValue((char *)name.c_str(), &fVal, &nFieldIndex, &nFieldType);
+#ifdef _DEBUG
+			if (MYSQL_TYPE_FLOAT != nFieldType) {
+				fprintf(stderr, "\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+				fprintf(stderr, "\n!!! !!! FAILED -- proto(%s)->name(%s)type(TYPE_FLOAT) mismatched with resultset fieldtype(%d)(%s)",
+					strtypename.c_str(), name.c_str(), nFieldType, s_map_field_type[nFieldType].c_str());
+				fprintf(stderr, "\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\n\n\n\t!!!DbService will abort!!!\n\n\n\n");
+				system("pause");
+				exit(-1);
+			}
+#endif
 			reflection->SetFloat(one_record, field, fVal);
 			break;
 		}
 
 		case google::protobuf::FieldDescriptor::TYPE_BOOL: {
 			int nVal = INT_MIN;
-			pRs->GetFieldValue((char *)name.c_str(), &nVal, &nFieldIndex);
+			pRs->GetFieldValue((char *)name.c_str(), &nVal, &nFieldIndex, &nFieldType);
+#ifdef _DEBUG
+			if (MYSQL_TYPE_LONG != nFieldType
+				&& MYSQL_TYPE_SHORT != nFieldType
+				&& MYSQL_TYPE_TINY != nFieldType) {
+				fprintf(stderr, "\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+				fprintf(stderr, "\n!!! !!! FAILED -- proto(%s)->name(%s)type(TYPE_BOOL) mismatched with resultset fieldtype(%d)(%s)",
+					strtypename.c_str(), name.c_str(), nFieldType, s_map_field_type[nFieldType].c_str());
+				fprintf(stderr, "\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\n\n\n\t!!!DbService will abort!!!\n\n\n\n");
+				system("pause");
+				exit(-1);
+			}
+#endif
 			reflection->SetBool(one_record, field, (0 != nVal));
 			break;
 		}
@@ -990,6 +1161,7 @@ Protobuf2DbEngine::AddFirstReturnRecord(IDBResultSet *pRs, google::protobuf::Mes
 
 		//
 		arrIndex[nIndex++] = nFieldIndex;
+		nFieldType = 0;
 	}
 
 }

@@ -178,7 +178,7 @@ CProtobufDbStub::EntityAdd(const google::protobuf::Message& entity, const std::s
 
 	while (_pb2dbEngine->IsOpened()
 		&& !_pb2dbEngine->EInsert(entity, sTableName, vKey)) {
-		fprintf(stderr, "[tid(%d)][EntitySave()] DB broken when add entity [%s], try reconnect after 6 seconds ...\n",
+		fprintf(stderr, "[tid(%d)][EntityAdd()] DB broken when add entity [%s], try reconnect after 6 seconds ...\n",
 			(int)::GetCurrentThreadId(), sTableName.c_str());
 
 		util_sleep(6000);

@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{666996A7-E537-3218-B223-9F7E71B30262}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>mysys_ssl</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\mysys_ssl\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mysys_ssl.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mysys_ssl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\mysys_ssl\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mysys_ssl.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mysys_ssl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\extra\rapidjson\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys_ssl;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\extra\yassl\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\extra\yassl\taocrypt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4099</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;ENABLED_DEBUG_SYNC;SAFE_MUTEX;HAVE_YASSL;YASSL_PREFIX;HAVE_OPENSSL;MULTI_THREADED;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ENABLED_DEBUG_SYNC;SAFE_MUTEX;HAVE_YASSL;YASSL_PREFIX;HAVE_OPENSSL;MULTI_THREADED;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\extra\rapidjson\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys_ssl;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\extra\yassl\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\extra\yassl\taocrypt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\extra\rapidjson\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys_ssl;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\extra\yassl\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\extra\yassl\taocrypt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\extra\rapidjson\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys_ssl;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\extra\yassl\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\extra\yassl\taocrypt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4099</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;HAVE_YASSL;YASSL_PREFIX;HAVE_OPENSSL;MULTI_THREADED;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;HAVE_YASSL;YASSL_PREFIX;HAVE_OPENSSL;MULTI_THREADED;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\extra\rapidjson\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys_ssl;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\extra\yassl\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\extra\yassl\taocrypt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\extra\rapidjson\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys_ssl;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\extra\yassl\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\extra\yassl\taocrypt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys_ssl\crypt_genhash_impl.cc" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys_ssl\mf_tempdir.cc" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys_ssl\my_default.cc" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys_ssl\my_getopt.cc" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys_ssl\my_aes.cc" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys_ssl\my_sha1.cc" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys_ssl\my_sha2.cc" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys_ssl\my_md5.cc" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys_ssl\my_rnd.cc" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys_ssl\my_murmur3.cc" />
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys_ssl\my_aes_yassl.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\dbug\dbug.vcxproj">
+      <Project>84DFB8F8-D5D0-3698-996C-32B8B83F87CB</Project>
+      <Name>dbug</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\strings\strings.vcxproj">
+      <Project>1F0B1EF4-7907-38EC-B077-9AB29EB9A444</Project>
+      <Name>strings</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\extra\yassl\taocrypt\taocrypt.vcxproj">
+      <Project>8E13ED63-471F-3D4E-9F94-F2EBA224447E</Project>
+      <Name>taocrypt</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\extra\yassl\yassl.vcxproj">
+      <Project>0491888B-74BD-3BB5-8527-3FFA87764590</Project>
+      <Name>yassl</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\zlib\zlib.vcxproj">
+      <Project>2994690D-D661-3EDC-B4DA-14624CEBC89E</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

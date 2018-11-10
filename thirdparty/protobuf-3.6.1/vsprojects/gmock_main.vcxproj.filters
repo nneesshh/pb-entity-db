@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\dd\protobuf-cpp-3.6.1\protobuf-3.6.1\third_party\googletest\googlemock\src\gmock_main.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\dd\protobuf-cpp-3.6.1\protobuf-3.6.1\cmake\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{25299001-F6D9-37A6-889F-EACE9AEFC0AC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

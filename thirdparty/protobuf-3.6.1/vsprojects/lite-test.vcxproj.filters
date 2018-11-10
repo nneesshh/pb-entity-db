@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\dd\protobuf-cpp-3.6.1\protobuf-3.6.1\src\google\protobuf\lite_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\protobuf-cpp-3.6.1\protobuf-3.6.1\src\google\protobuf\arena_test_util.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\protobuf-cpp-3.6.1\protobuf-3.6.1\src\google\protobuf\map_lite_test_util.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\protobuf-cpp-3.6.1\protobuf-3.6.1\src\google\protobuf\test_util_lite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\protobuf-cpp-3.6.1\protobuf-3.6.1\src\google\protobuf\map_lite_unittest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\protobuf-cpp-3.6.1\protobuf-3.6.1\src\google\protobuf\unittest_import_lite.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\protobuf-cpp-3.6.1\protobuf-3.6.1\src\google\protobuf\unittest_import_public_lite.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\protobuf-cpp-3.6.1\protobuf-3.6.1\src\google\protobuf\unittest_lite.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\protobuf-cpp-3.6.1\protobuf-3.6.1\src\google\protobuf\unittest_no_arena_lite.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\dd\protobuf-cpp-3.6.1\protobuf-3.6.1\cmake\CMakeLists.txt" />
+    <CustomBuild Include="D:\dd\protobuf-cpp-3.6.1\protobuf-3.6.1\vsprojects\CMakeFiles\1f9eb1a67ebdfe8a04045c1633291ed3\map_lite_unittest.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\dd\protobuf-cpp-3.6.1\protobuf-3.6.1\vsprojects\CMakeFiles\1f9eb1a67ebdfe8a04045c1633291ed3\unittest_import_lite.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\dd\protobuf-cpp-3.6.1\protobuf-3.6.1\vsprojects\CMakeFiles\1f9eb1a67ebdfe8a04045c1633291ed3\unittest_import_public_lite.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\dd\protobuf-cpp-3.6.1\protobuf-3.6.1\vsprojects\CMakeFiles\1f9eb1a67ebdfe8a04045c1633291ed3\unittest_lite.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\dd\protobuf-cpp-3.6.1\protobuf-3.6.1\vsprojects\CMakeFiles\1f9eb1a67ebdfe8a04045c1633291ed3\unittest_no_arena_lite.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{25299001-F6D9-37A6-889F-EACE9AEFC0AC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A3A3D346-58B2-3B91-BDAF-DC8406DB9431}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

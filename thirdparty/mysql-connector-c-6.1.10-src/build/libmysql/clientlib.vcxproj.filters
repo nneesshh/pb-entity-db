@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\libmysql\get_password.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\libmysql\libmysql.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\libmysql\errmsg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\sql-common\client.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\sql-common\my_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\sql-common\client_plugin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\sql-common\client_authentication.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\sql\net_serv.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\sql-common\pack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\sql\auth\password.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\libmysql\mysql_trace.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{475C184A-E376-3109-A1C5-54226D279302}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

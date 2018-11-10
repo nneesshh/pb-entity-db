@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="src\util">
+      <UniqueIdentifier>{767aeec0-49f8-4646-900d-af120470a4c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\net">
+      <UniqueIdentifier>{1012b2b5-b29d-4419-af9f-59a2e67b77ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\exceptions">
+      <UniqueIdentifier>{445f809f-070c-4f04-98bb-f9a94dfd18b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\db">
+      <UniqueIdentifier>{20760f13-a900-440a-a0d4-5b19c8859d71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\db\mysql">
+      <UniqueIdentifier>{c2d617f0-e2c8-434f-9be9-f774e43d62c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\system">
+      <UniqueIdentifier>{98077fa2-34ca-484d-b5cd-b8749fb4f467}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\Thread.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zdb.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Config.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\Vector.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\Str.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\StringBuffer.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xconfig.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\PreparedStatement.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\PreparedStatementDelegate.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\ResultSet.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\ResultSetDelegate.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\Connection.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\ConnectionDelegate.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\ConnectionPool.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\mysql\MysqlPreparedStatement.h">
+      <Filter>src\db\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\mysql\MysqlResultSet.h">
+      <Filter>src\db\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\db\mysql\MysqlConnection.h">
+      <Filter>src\db\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\URL.h">
+      <Filter>src\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\exceptions\SQLException.h">
+      <Filter>src\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\exceptions\AssertException.h">
+      <Filter>src\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\exceptions\Exception.h">
+      <Filter>src\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\exceptions\MemoryException.h">
+      <Filter>src\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\system\Time.h">
+      <Filter>src\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\system\Mem.h">
+      <Filter>src\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\system\System.h">
+      <Filter>src\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\exceptions\Assertion.h">
+      <Filter>src\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Macros.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\util\Vector.c">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\Str.c">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\StringBuffer.c">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\db\PreparedStatement.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\db\ResultSet.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\db\Connection.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\db\ConnectionPool.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\db\mysql\MysqlResultSet.c">
+      <Filter>src\db\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\db\mysql\MysqlConnection.c">
+      <Filter>src\db\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\db\mysql\MysqlPreparedStatement.c">
+      <Filter>src\db\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\exceptions\Exception.c">
+      <Filter>src\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\system\Mem.c">
+      <Filter>src\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\system\System.c">
+      <Filter>src\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\URL.c">
+      <Filter>src\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\system\Time.c">
+      <Filter>src\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\exceptions\Assertion.c">
+      <Filter>src\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\system\gettimeofday.c">
+      <Filter>src\system</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

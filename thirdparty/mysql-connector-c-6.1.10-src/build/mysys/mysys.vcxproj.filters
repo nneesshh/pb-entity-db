@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\array.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\charset-def.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\charset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\checksum.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\errors.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\hash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\mf_cache.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\mf_dirname.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\mf_fn_ext.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\mf_format.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\mf_getdate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\mf_iocache.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\mf_iocache2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\mf_keycache.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\mf_keycaches.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\mf_loadpath.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\mf_pack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\mf_path.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\mf_qsort.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\mf_qsort2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\mf_radix.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\mf_same.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\mf_soundex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\mf_arr_appstr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\mf_tempfile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\mf_unixpath.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\mf_wcomp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\mulalloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_access.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_alloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_bit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_bitmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_chsize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_compress.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_copy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_create.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_delete.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_div.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_file.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_fopen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_fstream.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_gethwaddr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_getsystime.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_getwd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_compare.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_lib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_lock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_malloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_mess.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_mkdir.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_mmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_once.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_open.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_pread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_read.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_redel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_rename.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_seek.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_static.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_symlink.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_symlink2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_sync.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_thr_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_write.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\ptr_cmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\queues.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\sql_chars.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\stacktrace.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\string.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\thr_cond.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\thr_lock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\thr_mutex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\thr_rwlock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\tree.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\typelib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\base64.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_memmem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\lf_alloc-pin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\lf_dynarray.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\lf_hash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_rdtsc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\psi_noop.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_syslog.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_chmod.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_thread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_conio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_windac.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_winerr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\my_winfile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\mysys\win_timers.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{475C184A-E376-3109-A1C5-54226D279302}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

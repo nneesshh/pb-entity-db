@@ -102,14 +102,15 @@ bool ZdbDriver::ExecuteSQL(char *sSQL, int *pRecordsAffected, long nOption, IDBR
 	bool bSucc = false;
 
 	int nFieldIndex = 0;
+	int nFieldType = 0;
 	Connection_T con = ConnectionPool_getConnection(_pool);
 	ResultSet_T result = Connection_executeQuery(con, "select * from AlipayTrans");
 	fprintf(stderr, "ALL NUMBE:%d\n", ConnectionPool_size(_pool));
 	fprintf(stderr, "ACTIVE NUMBER:%d\n", ConnectionPool_active(_pool));
 	while (ResultSet_next(result)) {
 		fprintf(stderr, "column: %s\n", ResultSet_getColumnName(result, 2));
-		fprintf(stderr, "%s\n ", ResultSet_getStringByName(result, "result_code", &nFieldIndex));
-		fprintf(stderr, "%s\n ", ResultSet_getString(result, 3));
+		fprintf(stderr, "%s\n ", ResultSet_getStringByName(result, "result_code", &nFieldIndex, &nFieldType));
+		fprintf(stderr, "%s\n ", ResultSet_getString(result, 3, &nFieldType));
 	}
 	Connection_close(con);
 

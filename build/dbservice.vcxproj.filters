@@ -78,9 +78,6 @@
     <ClInclude Include="..\src\base\types.h">
       <Filter>src\base</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\redisservice\src\base\fast_memcpy.h">
-      <Filter>src\base</Filter>
-    </ClInclude>
     <ClInclude Include="..\src\UsingProtobuf.h">
       <Filter>src</Filter>
     </ClInclude>
@@ -89,6 +86,9 @@
     </ClInclude>
     <ClInclude Include="..\src\log\StdLog.h">
       <Filter>src\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\base\fast_memcpy.h">
+      <Filter>src\base</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -134,7 +134,7 @@
     <ClCompile Include="..\src\base\URLCode.cpp">
       <Filter>src\base</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\redisservice\src\base\fast_memcpy.c">
+    <ClCompile Include="..\src\base\fast_memcpy.c">
       <Filter>src\base</Filter>
     </ClCompile>
   </ItemGroup>

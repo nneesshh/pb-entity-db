@@ -86,21 +86,21 @@ public:
 	virtual bool				MoveNext() = 0;
 	virtual bool				HasMoreResultSets() = 0;
 
-	virtual bool				GetFieldValue(char *sField, const char **ppStr, int *outFieldIndex) = 0;
+	virtual bool				GetFieldValue(char *sField, const char **ppStr, int *outFieldIndex, int *outFieldType) = 0;
 	virtual bool				GetFieldValue(int nField, const char **ppStr) = 0;
-	virtual bool				GetFieldValue(char *sField, unsigned char **ppBlob, unsigned long *pBlobSize, int *outFieldIndex) = 0;
+	virtual bool				GetFieldValue(char *sField, unsigned char **ppBlob, unsigned long *pBlobSize, int *outFieldIndex, int *outFieldType) = 0;
 	virtual bool				GetFieldValue(int nField, unsigned char **ppBlob, unsigned long *pBlobSize) = 0;
-	virtual bool				GetFieldFloatValue(char *sField, float *pVal, int *outFieldIndex) = 0;
+	virtual bool				GetFieldFloatValue(char *sField, float *pVal, int *outFieldIndex, int *outFieldType) = 0;
 	virtual bool				GetFieldFloatValue(int nField, float *pVal) = 0;
-	virtual bool				GetFieldDoubleValue(char *sField, double *pVal, int *outFieldIndex) = 0;
+	virtual bool				GetFieldDoubleValue(char *sField, double *pVal, int *outFieldIndex, int *outFieldType) = 0;
 	virtual bool				GetFieldDoubleValue(int nField, double *pVal) = 0;
-	virtual bool				GetFieldInt64Value(char *sField, int64_t *pVal, int *outFieldIndex) = 0;
+	virtual bool				GetFieldInt64Value(char *sField, int64_t *pVal, int *outFieldIndex, int *outFieldType) = 0;
 	virtual bool				GetFieldInt64Value(int nField, int64_t *pVal) = 0;
-	virtual bool				GetFieldValue(char *sField, int *pVal, int *outFieldIndex) = 0;
+	virtual bool				GetFieldValue(char *sField, int *pVal, int *outFieldIndex, int *outFieldType) = 0;
 	virtual bool				GetFieldValue(int nField, int *pVal) = 0;
-	virtual bool				GetFieldValue(char *sField, short *pVal, int *outFieldIndex) = 0;
+	virtual bool				GetFieldValue(char *sField, short *pVal, int *outFieldIndex, int *outFieldType) = 0;
 	virtual bool				GetFieldValue(int nField, short *pVal) = 0;
-	virtual bool				GetFieldValue(char *sField, time_t *ptime, int *outFieldIndex) = 0;
+	virtual bool				GetFieldValue(char *sField, time_t *ptime, int *outFieldIndex, int *outFieldType) = 0;
 	virtual bool				GetFieldValue(int nField, time_t *ptime) = 0;
 };
 

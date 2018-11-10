@@ -53,10 +53,14 @@ private:
 
 	const google::protobuf::Message *	LookupPrototype(const std::string& strTypeName) {
 		const google::protobuf::Descriptor *descriptor = FindDescriptor(strTypeName);
-		if (nullptr == descriptor && _refLog) {
+		if (nullptr == descriptor) {
 			// error
-			_refLog->logprint(LOG_LEVEL_ERROR, "\n\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n!!!!!!!![CProtobufImporter::LookupPrototype()] failed, type_name = %s!!!!!!!!\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\n"
-				, strTypeName.c_str());
+			if (_refLog)
+				_refLog->logprint(LOG_LEVEL_ERROR, "\n\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n!!!!!!!![CProtobufImporter::LookupPrototype()] failed, type_name = %s!!!!!!!!\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\n"
+					, strTypeName.c_str());
+			else
+				fprintf(stderr, "\n\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n!!!!!!!![CProtobufImporter::LookupPrototype()] failed, type_name = %s!!!!!!!!\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\n"
+					, strTypeName.c_str());
 			return nullptr;
 		}
 		return FindPrototype(*descriptor);

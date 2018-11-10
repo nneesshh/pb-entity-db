@@ -47,3 +47,7 @@ build/\.vs/
 lib/Debug/
 
 lib/Release/
+
+thirdparty/pthreads-w32-2-9-1-release/pthreads\.2/vc140\.idb
+
+*.idb

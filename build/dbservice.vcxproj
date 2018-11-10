@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -11,10 +11,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\redisservice\src\base\fast_memcpy.h" />
     <ClInclude Include="..\src\base\CamelConcurrentQueue.h" />
     <ClInclude Include="..\src\base\concurrent\blockingconcurrentqueue.h" />
     <ClInclude Include="..\src\base\concurrent\concurrentqueue.h" />
+    <ClInclude Include="..\src\base\fast_memcpy.h" />
     <ClInclude Include="..\src\base\IDbService.h" />
     <ClInclude Include="..\src\base\mysnprintf.h" />
     <ClInclude Include="..\src\base\platform_types.h" />
@@ -37,8 +37,8 @@
     <ClInclude Include="..\src\UsingProtobuf.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\redisservice\src\base\fast_memcpy.c" />
     <ClCompile Include="..\src\base\CamelConcurrentQueue.cpp" />
+    <ClCompile Include="..\src\base\fast_memcpy.c" />
     <ClCompile Include="..\src\base\mysnprintf.c" />
     <ClCompile Include="..\src\base\URLCode.cpp" />
     <ClCompile Include="..\src\base\utilities.c" />
@@ -58,16 +58,16 @@
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>SgServer</RootNamespace>
     <ProjectName>dbservice</ProjectName>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
     <WholeProgramOptimization>false</WholeProgramOptimization>
@@ -76,24 +76,22 @@
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <Import Project="..\..\support.props" />
-  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <TargetName>$(ProjectName)</TargetName>
     <IncludePath>C:\Program Files (x86)\Windows Kits\8.1\Include\shared;$(IncludePath)</IncludePath>
-    <OutDir>..\..\..\bin_sandbox\$(Configuration)\</OutDir>
+    <OutDir>..\bin\$(Configuration)\</OutDir>
     <IntDir>$(ProjectName).dir\obj\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>C:\Program Files (x86)\Windows Kits\8.1\Include\shared;$(IncludePath)</IncludePath>
-    <OutDir>..\..\..\bin_sandbox\$(Configuration)\</OutDir>
+    <OutDir>..\bin\$(Configuration)\</OutDir>
     <IntDir>$(ProjectName).dir\obj\$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Link>
-      <AdditionalLibraryDirectories>../../libevent/pthreads-w32-2-9-1-release/pthreads.2/lib/$(Configuration);../../mysql/mysql-connector-c-6.1.10-src/build/libmysql/$(Configuration);../../mysql/libzdb-3.1/lib/$(Configuration);../../g/protobuf-3.6.1/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>../thirdparty/mysql-connector-c-6.1.10-src/build/libmysql/$(Configuration);../thirdparty/libzdb-3.1/lib/$(Configuration);../thirdparty/pthreads-w32-2-9-1-release/pthreads.2/lib/$(Configuration);../thirdparty/protobuf-3.6.1/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>libmysql.lib;libzdb.lib;pthread.lib;libprotobuf.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
       <ShowProgress>NotSet</ShowProgress>
@@ -104,7 +102,7 @@
       <ModuleDefinitionFile>Source.def</ModuleDefinitionFile>
     </Link>
     <ClCompile>
-      <AdditionalIncludeDirectories>../src;../../libevent/pthreads-w32-2-9-1-release/pthreads.2;../../mysql/mysql-connector-c-6.1.10-src/include;../../mysql/mysql-connector-c-6.1.10-src/build/include;../../mysql/libzdb-3.1/src;../../g/protobuf-3.6.1/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../src;../thirdparty/mysql-connector-c-6.1.10-src/include;../thirdparty/mysql-connector-c-6.1.10-src/build/include;../thirdparty/libzdb-3.1/src;../thirdparty/pthreads-w32-2-9-1-release/pthreads.2;../thirdparty/protobuf-3.6.1/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;HAVE_STRUCT_TIMESPEC;_ENABLE_ATOMIC_ALIGNMENT_FIX;MY_DB_BUILDING_SHARED;DBSERVICE_DEBUG_CMD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <Optimization>Disabled</Optimization>
@@ -118,13 +116,13 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../src;../../libevent/pthreads-w32-2-9-1-release/pthreads.2;../../mysql/mysql-connector-c-6.1.10-src/include;../../mysql/mysql-connector-c-6.1.10-src/build/include;../../mysql/libzdb-3.1/src;../../g/protobuf-3.6.1/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../src;../thirdparty/mysql-connector-c-6.1.10-src/include;../thirdparty/mysql-connector-c-6.1.10-src/build/include;../thirdparty/libzdb-3.1/src;../thirdparty/pthreads-w32-2-9-1-release/pthreads.2;../thirdparty/protobuf-3.6.1/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;HAVE_STRUCT_TIMESPEC;_ENABLE_ATOMIC_ALIGNMENT_FIX;MY_DB_BUILDING_SHARED;DBSERVICE_DEBUG_CMD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <Optimization>Disabled</Optimization>
+      <Optimization>Full</Optimization>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>../../libevent/pthreads-w32-2-9-1-release/pthreads.2/lib/$(Configuration);../../mysql/mysql-connector-c-6.1.10-src/build/libmysql/$(Configuration);../../mysql/libzdb-3.1/lib/$(Configuration);../../g/protobuf-3.6.1/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>../thirdparty/mysql-connector-c-6.1.10-src/build/libmysql/$(Configuration);../thirdparty/libzdb-3.1/lib/$(Configuration);../thirdparty/pthreads-w32-2-9-1-release/pthreads.2/lib/$(Configuration);../thirdparty/protobuf-3.6.1/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>libmysql.lib;libzdb.lib;pthread.lib;libprotobuf.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
       <ShowProgress>NotSet</ShowProgress>

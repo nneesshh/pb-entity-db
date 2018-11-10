@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{C2C84DF9-B15E-37E2-B860-45D80269EC3B}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\extra\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\include;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\extra\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src -BD:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/build --check-stamp-file D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/CMakeLists.txt;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\CMakeLists.txt;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\CMakeFiles\3.8.0\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\CMakeFiles\3.8.0\CMakeCCompiler.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\CMakeFiles\3.8.0\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\CMakeFiles\3.8.0\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\os\Windows.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFileCXX.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\os\WindowsCache.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFileCXX.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\build_configurations\compiler_options.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\floating_point.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCXXSourceRuns.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\build_configurations\feature_set.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\character_sets.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\cpu_info.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\zlib.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\ssl.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\mysql_version.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\VERSION;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\package_name.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\cpack_source_ignore_files.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\versioninfo.rc.in;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\versioninfo.rc.in;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\libutils.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\cmake_parse_arguments.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\dtrace.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\install_macros.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\cmake_parse_arguments.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\install_layout.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\mysql_add_executable.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\cmake_parse_arguments.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCXXSourceCompiles.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\configure.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFileCXX.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\maintainer.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\abi_check.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\tags.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\config.h.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\config.h.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\include\mysql_version.h.in;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\info_macros.cmake.in;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\info_macros.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.8\Templates\CPackConfig.cmake.in;C:\Program Files\CMake\share\cmake-3.8\Templates\CPackConfig.cmake.in;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src -BD:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/build --check-stamp-file D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/dd/sdk32/support/mysql/mysql-connector-c-6.1.10-src/CMakeLists.txt;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\CMakeLists.txt;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\CMakeFiles\3.8.0\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\CMakeFiles\3.8.0\CMakeCCompiler.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\CMakeFiles\3.8.0\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\CMakeFiles\3.8.0\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\os\Windows.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFileCXX.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\os\WindowsCache.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFileCXX.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\build_configurations\compiler_options.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\floating_point.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCXXSourceRuns.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\build_configurations\feature_set.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\character_sets.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\cpu_info.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\zlib.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\ssl.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\mysql_version.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\VERSION;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\package_name.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\cpack_source_ignore_files.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\versioninfo.rc.in;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\versioninfo.rc.in;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\libutils.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\cmake_parse_arguments.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\dtrace.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\install_macros.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\cmake_parse_arguments.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\install_layout.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\mysql_add_executable.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\cmake_parse_arguments.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCXXSourceCompiles.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\configure.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFileCXX.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\maintainer.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\abi_check.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\tags.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\config.h.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\config.h.cmake;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\include\mysql_version.h.in;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\cmake\info_macros.cmake.in;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\info_macros.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.8\Templates\CPackConfig.cmake.in;C:\Program Files\CMake\share\cmake-3.8\Templates\CPackConfig.cmake.in;D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\ZERO_CHECK.vcxproj">
+      <Project>7F4C96C9-BFF8-37F6-8638-5B131679F1F1</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\extra\GenError.vcxproj">
+      <Project>F9E90155-6441-3463-A876-9438922F34FE</Project>
+      <Name>GenError</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\INFO_BIN.vcxproj">
+      <Project>A6FE41D9-FD90-3337-9FBD-CBD57149F1BA</Project>
+      <Name>INFO_BIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\INFO_SRC.vcxproj">
+      <Project>4B3EEE43-7B69-3FD3-8E1F-FCFB478A8BDA</Project>
+      <Name>INFO_SRC</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\libmysql\authentication_win\auth_win_client.vcxproj">
+      <Project>DDA76DEE-297E-38FA-A6FB-1429A4B8952F</Project>
+      <Name>auth_win_client</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\libmysql\clientlib.vcxproj">
+      <Project>048A13D9-D367-3E0B-81DB-A448B534D8F7</Project>
+      <Name>clientlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\extra\comp_err.vcxproj">
+      <Project>177DA5FC-2346-355A-80CE-BDA65F0CF593</Project>
+      <Name>comp_err</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\dbug\dbug.vcxproj">
+      <Project>84DFB8F8-D5D0-3698-996C-32B8B83F87CB</Project>
+      <Name>dbug</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\libmysql\libmysql.vcxproj">
+      <Project>4D8B17BD-C768-314A-9923-0EC6E72E055B</Project>
+      <Name>libmysql</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\libmysql\libmysql_api_test.vcxproj">
+      <Project>80E6446C-58E1-3085-9248-704265340BA9</Project>
+      <Name>libmysql_api_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\extra\my_print_defaults.vcxproj">
+      <Project>FC27F581-FF9E-3292-8472-2EF2663955A9</Project>
+      <Name>my_print_defaults</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\testclients\mysql_client_test.vcxproj">
+      <Project>118FB004-229A-35F3-98B5-D47880DA18B9</Project>
+      <Name>mysql_client_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\libmysql\mysqlclient.vcxproj">
+      <Project>5DCCED28-0B5B-3568-819A-D7A936E88770</Project>
+      <Name>mysqlclient</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\mysys_ssl\mysys_ssl.vcxproj">
+      <Project>666996A7-E537-3218-B223-9F7E71B30262</Project>
+      <Name>mysys_ssl</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\extra\perror.vcxproj">
+      <Project>301AA1F1-1548-373E-BC1B-8254D68B825D</Project>
+      <Name>perror</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\regex\regex.vcxproj">
+      <Project>00884245-13E4-3949-A783-C2E2A5026269</Project>
+      <Name>regex</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\extra\resolveip.vcxproj">
+      <Project>765C32B9-2108-30E8-AF13-08BC4BF13D90</Project>
+      <Name>resolveip</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\strings\strings.vcxproj">
+      <Project>1F0B1EF4-7907-38EC-B077-9AB29EB9A444</Project>
+      <Name>strings</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\extra\yassl\taocrypt\taocrypt.vcxproj">
+      <Project>8E13ED63-471F-3D4E-9F94-F2EBA224447E</Project>
+      <Name>taocrypt</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\vio\vio.vcxproj">
+      <Project>E0424756-D4B9-3033-9927-6F468F2E2898</Project>
+      <Name>vio</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\extra\yassl\yassl.vcxproj">
+      <Project>0491888B-74BD-3BB5-8527-3FFA87764590</Project>
+      <Name>yassl</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\dd\sdk32\support\mysql\mysql-connector-c-6.1.10-src\build\zlib\zlib.vcxproj">
+      <Project>2994690D-D661-3EDC-B4DA-14624CEBC89E</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

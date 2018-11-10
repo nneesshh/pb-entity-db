@@ -245,10 +245,10 @@ public:
 		return ResultSet_nextResultSet(_refStatement->_resultSet);
 	}
 
-	virtual bool				GetFieldValue(char *sField, const char **ppStr, int *outFieldIndex) override {
+	virtual bool				GetFieldValue(char *sField, const char **ppStr, int *outFieldIndex, int *outFieldType) override {
 		bool bSucc = true;
 		TRY
-			(*ppStr) = ResultSet_getStringByName(_refStatement->_resultSet, sField, outFieldIndex);
+			(*ppStr) = ResultSet_getStringByName(_refStatement->_resultSet, sField, outFieldIndex, outFieldType);
 		ELSE
 			_refDriver->GetLogHandler()->logprint(LOG_LEVEL_WARNING, "[tid(%d)]Get string by name failed -- sql(%s)field(%s)!!!\n",
 				(int)::GetCurrentThreadId(), _refStatement->GetName(), sField);
@@ -264,14 +264,15 @@ public:
 	}
 
 	virtual bool				GetFieldValue(int nField, const char **ppStr) override {
-		(*ppStr) = ResultSet_getString(_refStatement->_resultSet, nField);
+		int nFieldType;
+		(*ppStr) = ResultSet_getString(_refStatement->_resultSet, nField, &nFieldType);
 		return true;
 	}
 
-	virtual bool				GetFieldValue(char *sField, unsigned char **ppBlob, unsigned long *pBlobSize, int *outFieldIndex) override {
+	virtual bool				GetFieldValue(char *sField, unsigned char **ppBlob, unsigned long *pBlobSize, int *outFieldIndex, int *outFieldType) override {
 		bool bSucc = true;
 		TRY
-			(*ppBlob) = (unsigned char *)ResultSet_getBlobByName(_refStatement->_resultSet, sField, (int *)pBlobSize, outFieldIndex);
+			(*ppBlob) = (unsigned char *)ResultSet_getBlobByName(_refStatement->_resultSet, sField, (int *)pBlobSize, outFieldIndex, outFieldType);
 		ELSE
 			_refDriver->GetLogHandler()->logprint(LOG_LEVEL_WARNING, "[tid(%d)]Get blob by name failed -- sql(%s)field(%s)!!!\n",
 				(int)::GetCurrentThreadId(), _refStatement->GetName(), sField);
@@ -287,14 +288,15 @@ public:
 	}
 
 	virtual bool				GetFieldValue(int nField, unsigned char **ppBlob, unsigned long *pBlobSize) override {
-		(*ppBlob) = (unsigned char *)ResultSet_getBlob(_refStatement->_resultSet, nField, (int *)pBlobSize);
+		int nFieldType;
+		(*ppBlob) = (unsigned char *)ResultSet_getBlob(_refStatement->_resultSet, nField, (int *)pBlobSize, &nFieldType);
 		return true;
 	}
 
-	virtual bool				GetFieldFloatValue(char *sField, float *pVal, int *outFieldIndex) override {
+	virtual bool				GetFieldFloatValue(char *sField, float *pVal, int *outFieldIndex, int *outFieldType) override {
 		bool bSucc = true;
 		TRY
-			*pVal = ResultSet_getFloatByName(_refStatement->_resultSet, sField, outFieldIndex);
+			*pVal = ResultSet_getFloatByName(_refStatement->_resultSet, sField, outFieldIndex, outFieldType);
 		ELSE
 			_refDriver->GetLogHandler()->logprint(LOG_LEVEL_WARNING, "[tid(%d)]Get float by name failed -- sql(%s)field(%s)!!!\n",
 				(int)::GetCurrentThreadId(), _refStatement->GetName(), sField);
@@ -310,14 +312,15 @@ public:
 	}
 
 	virtual bool				GetFieldFloatValue(int nField, float *pVal) override {
-		*pVal = ResultSet_getFloat(_refStatement->_resultSet, nField);
+		int nFieldType;
+		*pVal = ResultSet_getFloat(_refStatement->_resultSet, nField, &nFieldType);
 		return true;
 	}
 
-	virtual bool				GetFieldDoubleValue(char *sField, double *pVal, int *outFieldIndex) override {
+	virtual bool				GetFieldDoubleValue(char *sField, double *pVal, int *outFieldIndex, int *outFieldType) override {
 		bool bSucc = true;
 		TRY
-			*pVal = ResultSet_getDoubleByName(_refStatement->_resultSet, sField, outFieldIndex);
+			*pVal = ResultSet_getDoubleByName(_refStatement->_resultSet, sField, outFieldIndex, outFieldType);
 		ELSE
 			_refDriver->GetLogHandler()->logprint(LOG_LEVEL_WARNING, "[tid(%d)]Get double by name failed -- sql(%s)field(%s)!!!\n",
 				(int)::GetCurrentThreadId(), _refStatement->GetName(), sField);
@@ -333,14 +336,15 @@ public:
 	}
 
 	virtual bool				GetFieldDoubleValue(int nField, double *pVal) override {
-		*pVal = ResultSet_getDouble(_refStatement->_resultSet, nField);
+		int nFieldType;
+		*pVal = ResultSet_getDouble(_refStatement->_resultSet, nField, &nFieldType);
 		return true;
 	}
 
-	virtual bool				GetFieldInt64Value(char *sField, int64_t *pVal, int *outFieldIndex) override {
+	virtual bool				GetFieldInt64Value(char *sField, int64_t *pVal, int *outFieldIndex, int *outFieldType) override {
 		bool bSucc = true;
 		TRY
-			*pVal = ResultSet_getLLongByName(_refStatement->_resultSet, sField, outFieldIndex);
+			*pVal = ResultSet_getLLongByName(_refStatement->_resultSet, sField, outFieldIndex, outFieldType);
 		ELSE
 			_refDriver->GetLogHandler()->logprint(LOG_LEVEL_WARNING, "[tid(%d)]Get llong by name failed -- sql(%s)field(%s)!!!\n",
 				(int)::GetCurrentThreadId(), _refStatement->GetName(), sField);
@@ -356,14 +360,15 @@ public:
 	}
 
 	virtual bool				GetFieldInt64Value(int nField, int64_t *pVal) override {
-		*pVal = ResultSet_getLLong(_refStatement->_resultSet, nField);
+		int nFieldType;
+		*pVal = ResultSet_getLLong(_refStatement->_resultSet, nField, &nFieldType);
 		return true;
 	}
 
-	virtual bool				GetFieldValue(char *sField, int *pVal, int *outFieldIndex) override {
+	virtual bool				GetFieldValue(char *sField, int *pVal, int *outFieldIndex, int *outFieldType) override {
 		bool bSucc = true;
 		TRY
-			*pVal = ResultSet_getIntByName(_refStatement->_resultSet, sField, outFieldIndex);
+			*pVal = ResultSet_getIntByName(_refStatement->_resultSet, sField, outFieldIndex, outFieldType);
 		ELSE
 			_refDriver->GetLogHandler()->logprint(LOG_LEVEL_WARNING, "[tid(%d)] Get int by name failed -- sql(%s)field(%s)!!!\n",
 				(int)::GetCurrentThreadId(), _refStatement->GetName(), sField);
@@ -379,14 +384,15 @@ public:
 	}
 
 	virtual bool				GetFieldValue(int nField, int *pVal) override {
-		*pVal = ResultSet_getInt(_refStatement->_resultSet, nField);
+		int nFieldType;
+		*pVal = ResultSet_getInt(_refStatement->_resultSet, nField, &nFieldType);
 		return true;
 	}
 
-	virtual bool				GetFieldValue(char *sField, short *pVal, int *outFieldIndex) override {
+	virtual bool				GetFieldValue(char *sField, short *pVal, int *outFieldIndex, int *outFieldType) override {
 		bool bSucc = true;
 		TRY
-			*pVal = (short)ResultSet_getIntByName(_refStatement->_resultSet, sField, outFieldIndex);
+			*pVal = (short)ResultSet_getIntByName(_refStatement->_resultSet, sField, outFieldIndex, outFieldType);
 		ELSE
 			_refDriver->GetLogHandler()->logprint(LOG_LEVEL_WARNING, "[tid(%d)]Get short by name failed -- sql(%s)field(%s)!!!\n", 
 				(int)::GetCurrentThreadId(), _refStatement->GetName(), sField);
@@ -402,14 +408,15 @@ public:
 	}
 
 	virtual bool				GetFieldValue(int nField, short *pVal) override {
-		*pVal = (short)ResultSet_getInt(_refStatement->_resultSet, nField);
+		int nFieldType;
+		*pVal = (short)ResultSet_getInt(_refStatement->_resultSet, nField, &nFieldType);
 		return true;
 	}
 
-	virtual bool				GetFieldValue(char *sField, time_t *ptime, int *outFieldIndex) override {
+	virtual bool				GetFieldValue(char *sField, time_t *ptime, int *outFieldIndex, int *outFieldType) override {
 		bool bSucc = true;
 		TRY
-			*ptime = ResultSet_getTimestampByName(_refStatement->_resultSet, sField, outFieldIndex);
+			*ptime = ResultSet_getTimestampByName(_refStatement->_resultSet, sField, outFieldIndex, outFieldType);
 		ELSE
 			_refDriver->GetLogHandler()->logprint(LOG_LEVEL_WARNING, "[tid(%d)]Get timestamp by name failed -- sql(%s)field(%s)!!!\n",
 				(int)::GetCurrentThreadId(), _refStatement->GetName(), sField);
@@ -425,7 +432,8 @@ public:
 	}
 
 	virtual bool				GetFieldValue(int nField, time_t *ptime) override {
-		*ptime = ResultSet_getTimestamp(_refStatement->_resultSet, nField);
+		int nFieldType;
+		*ptime = ResultSet_getTimestamp(_refStatement->_resultSet, nField, &nFieldType);
 		return true;
 	}
 
