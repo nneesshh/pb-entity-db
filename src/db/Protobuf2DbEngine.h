@@ -93,7 +93,7 @@ public:
 public:
 	IDatabase				*_db = nullptr;
 	bool					_opened = false;
-
+	StdLog					*_refLog = nullptr;
 };
 
 /*EOF*/

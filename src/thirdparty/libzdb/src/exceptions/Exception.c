@@ -63,7 +63,7 @@ static pthread_once_t once_control1 = PTHREAD_ONCE_INIT;
 static pthread_once_t once_control2 = PTHREAD_ONCE_INIT;
 
 
-/* -------------------------------------------------------- Privat methods */
+/* -------------------------------------------------------- Private methods */
 
 
 static void init_once(void) {
